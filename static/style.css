@@ -1,0 +1,139 @@
+:root{
+    --clr-primary: #3792cb;
+    --clr-secondary: #307199;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+h1,h2 {
+    margin: 20px 0;
+}
+
+.header {
+    text-align: center;
+    background:var(--clr-primary);
+    color: white;
+    padding: 50px 20px;
+}
+
+.sub-heads{
+    background-color: var(--clr-primary);
+    padding: 20px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.side {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex: 30%;
+    background: #ececec;
+    padding:20px;
+}
+
+.main {
+    flex:70%;
+    padding: 20px;
+    text-align: center;
+}
+
+.submit{
+    border:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background:var(--clr-secondary);
+    cursor:pointer;
+    transition:all .5s;
+    width: 50%;
+}
+
+.submit:hover{
+    background: var(--clr-primary);
+}
+
+#file {
+    display: none;
+}
+
+.upload-btn{
+    display:inline-block ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background:var(--clr-secondary);
+    cursor: pointer;
+    transition: all .5s;
+    width: 50%;
+    margin: 20px 0px;
+}
+
+.upload-btn:hover{
+    background: var(--clr-primary);
+}
+
+.upload-area {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto 10px;
+    padding: 10px;
+}
+
+#output{
+    display: block;
+    width: 100%;
+}
+
+.side-img {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.side1 {
+    display: none;
+}
+
+footer{
+    background-color: #3792cb;
+    height: 50px;
+    text-align: center;
+    color:white;
+    padding-top: 15px;
+  }
+
+@media only screen and (max-device-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .side1 {
+        display: block;
+        padding: 20px;
+        flex: 30%;
+        background: #ececec;
+    }
+
+    .main {
+        flex: 100%;
+    }
+
+    .side {
+        flex: 100%;
+        display: none;
+    }
+}
