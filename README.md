@@ -1,1 +1,1 @@
-# Chest X-Ray Disease Analysis
+# CXR-Classifier
